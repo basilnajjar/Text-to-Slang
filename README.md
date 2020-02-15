@@ -1,2 +1,2 @@
 # Text-to-Slang
-Translate from normal text to slang
+Translate normal text to slang
