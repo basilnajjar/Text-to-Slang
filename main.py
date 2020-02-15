@@ -27,7 +27,7 @@ def slang_it(article):
     # set up the selenium driver
     chromedriver = os.path.abspath("chromedriver.exe")
     driver = webdriver.Chrome(chromedriver)
-    driver.get("https://www.noslang.com/reverse/")
+    driver.get(text_to_slang_translator_url)
 
     inputElement = driver.find_element_by_id("p")
     inputElement.clear()
