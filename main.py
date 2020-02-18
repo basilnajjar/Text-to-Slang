@@ -9,7 +9,6 @@ article_url= "https://www.thecrimson.com/article/2020/2/13/doe-investigation-for
 text_to_slang_translator_url = "https://www.noslang.com/reverse/"
 
 
-
 def get_article():
     src = requests.get(article_url)
     if src.status_code == 200:
@@ -48,7 +47,6 @@ def slang_it(article):
     article = ''
     skip = i = 0
 
-
     while i < len(words) - 2:
         if words[i].lower() == 'a':
             article += words[i] + " fookin'"
@@ -59,7 +57,6 @@ def slang_it(article):
                 article += "a goddamn'"
             else:
                 article += "a stupid"
-
 
         elif words[i].lower() == 'president':
             article += 'Bo$$'
@@ -100,7 +97,6 @@ def slang_it(article):
         # 20 words per line
         if i % 20 == 0:
             article += '\n'
-
 
     return article
 
